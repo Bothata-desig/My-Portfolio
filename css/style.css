@@ -294,13 +294,15 @@ html {
 
 .hero-image {
   width: 100%;
-  max-width: 450px;   /* larger size */
-  height: 550px;      /* taller for a bold look */
-  border-radius: 0;   /* keep it rectangular */
-  object-fit: cover;  /* fill container nicely */
+  max-width: 450px;
+  height: 550px;
+  border-radius: 0;
+  object-fit: cover;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  transform: rotate(0deg); /* Force correct orientation */
 }
+
 
 .hero-right {
   flex: 1;
@@ -444,6 +446,14 @@ html {
   color: #555;
   line-height: 1.8;
   margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
 }
 
 
