@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bothata Sello - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Bothata<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        
+      </ul>
+      <a href="#contact" class="chat-btn">Let's Chat</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <h1>Hi! I Am <br /><span>Bothata Sello</span></h1>
+      <div class="badge">Software Developer</div>
+      <p>
+        Building scalable web and mobile solutions with React, Node.js, and
+        MongoDB. Passionate about UI/UX and product-driven development.
+      </p>
+      <div class="buttons">
+        <a href="#contact" class="btn-primary">Hire Me</a>
+        <a href="#projects" class="btn-secondary">Projects →</a>
+      </div>
+      <div class="stats">
+        <div><strong>+5</strong><br />Clients</div>
+        <div><strong>7</strong><br />Projects Done</div>
+      </div>
+      <div class="contact-info">
+        <p><strong>Contact:</strong> sellobothata@gmail.com</p>
+        <p>
+          <a href="https://github.com/Bothata-desig" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/bothata-sello-278a88207/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+    <div class="hero-right">
+  <img src="images/Profile.JPG" alt="Bothata Sello" class="hero-image" />
+  <div class="floating-icons">
+  <a href="https://www.facebook.com/yourprofile" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://wa.me/26659336244" target="_blank" class="icon"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.instagram.com/yourprofile" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+</div>
+
+</div>
+  </section>
+
+ <!-- Projects Section Wrapper -->
+<section id="projects">
+  <!-- Highlands Lodge Project -->
+  <div class="project">
+    <div class="project-image">
+      <img src="images/highlands.PNG" alt="Highlands Lodge Website">
+    </div>
+    <div class="project-info">
+      <h2>Highlands Lodge Website</h2>
+      <p>A professional business website for <strong>wings & chips store</strong>, a resteurent that sells mouth watery wings and chips. The project highlights wings & chips food  and
+      includes modern UI design, responsive layout, and business service pages.</p>
+      <a href="http://highlandslodge.co.ls/" target="_blank" class="project-link">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- TEQ Solutions Project -->
+  <div class="project">
+    <div class="project-image">
+      <img src="images/teq.PNG" alt="TEQ Solutions Project">
+    </div>
+    <div class="project-info">
+      <h2>TEQ Solutions (Pty) Ltd</h2>
+      <p>A professional business website for <strong>TEQ Solutions</strong>, a renewable energy and
+      electrical services company. The project highlights sustainable technology solutions and
+      includes modern UI design, responsive layout, and business service pages.</p>
+      <a href="http://teqsolutions.co.ls/" target="_blank" class="project-link">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- Wings & Chips Project -->
+  <div class="project">
+    <div class="project-image">
+      <img src="images/Wing&Chips.PNG" alt="Wing Project">
+    </div>
+    <div class="project-info">
+      <h2>Wings & Chips</h2>
+      <p>A professional business website for <strong>wings & chips store</strong>, a resteurent that sells mouth watery wings and chips. The project highlights wings & chips food  and
+      includes modern UI design, responsive layout, and business service pages.</p>
+      <a href="https://wingsandchips.onrender.com//" target="_blank" class="project-link">Visit Website</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer id="contact">
+    <p>
+      © 2025 Bothata Sello | Contact me at
+      <a href="mailto:sellobothata@gmail.com">sellobothata@gmail.com</a>
+    </p>
+  </footer>
+  <script>
+  const projects = document.querySelectorAll('.project');
+  const revealProjects = () => {
+    projects.forEach(project => {
+      const rect = project.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        project.classList.add('visible');
+      }
+    });
+  };
+  window.addEventListener('scroll', revealProjects);
+  revealProjects();
+</script>
+
+</body>
+</html>
