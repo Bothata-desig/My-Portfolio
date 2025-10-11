@@ -293,14 +293,23 @@ html {
 }
 
 .hero-image {
-  width: 300px;       /* increased from 250px */
-  height: 300px;      /* increased from 250px */
-  border-radius: 50%; /* keeps it circular */
-  object-fit: cover;
-  border: 4px solid #00aaff; /* optional border */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 450px;   /* larger size */
+  height: 550px;      /* taller for a bold look */
+  border-radius: 0;   /* keep it rectangular */
+  object-fit: cover;  /* fill container nicely */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
 
 .hero-image:hover {
   transform: scale(1.05); /* subtle hover effect */
@@ -405,6 +414,38 @@ html {
     text-align: center;
     padding-top: 1rem;
   }
+  .hero-right img,
+.image-placeholder {
+  width: 100%;
+  max-width: 380px;
+  height: 450px;
+  border-radius: 0;
+  object-fit: cover;
+}
+.about {
+  padding: 4rem 10%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #1b2b44;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
 
   footer {
     padding: 1rem;
