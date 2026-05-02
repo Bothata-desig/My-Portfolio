@@ -298,6 +298,7 @@ html {
   height: 550px;
   border-radius: 0;
   object-fit: cover;
+  object-position: center top;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   transform: rotate(0deg); /* Force correct orientation */
@@ -423,6 +424,7 @@ html {
   height: 450px;
   border-radius: 0;
   object-fit: cover;
+  object-position: center top;
 }
 .about {
   padding: 4rem 10%;
